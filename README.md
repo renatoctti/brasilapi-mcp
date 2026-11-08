@@ -38,7 +38,7 @@ Requires Node 20 or newer.
 Claude Code:
 
 ```bash
-claude mcp add brasilapi -- npx -y brasilapi-mcp
+claude mcp add brasilapi -- npx -y @renatoctti/brasilapi-mcp
 ```
 
 Claude Desktop, Cursor and other clients that read an `mcpServers` block:
@@ -48,7 +48,7 @@ Claude Desktop, Cursor and other clients that read an `mcpServers` block:
   "mcpServers": {
     "brasilapi": {
       "command": "npx",
-      "args": ["-y", "brasilapi-mcp"]
+      "args": ["-y", "@renatoctti/brasilapi-mcp"]
     }
   }
 }
