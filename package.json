@@ -1,0 +1,49 @@
+{
+  "name": "brasilapi-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Brazilian public data via BrasilAPI: CNPJ (company registry and partners), CEP, CNPJ/CPF validation and national holidays.",
+  "mcpName": "io.github.renatoctti/brasilapi-mcp",
+  "type": "module",
+  "bin": {
+    "brasilapi-mcp": "dist/src/index.js"
+  },
+  "files": [
+    "dist/src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/validate.test.js dist/test/tools.test.js dist/test/server.test.js",
+    "prepublishOnly": "npm test",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "brasilapi",
+    "cnpj",
+    "cpf",
+    "cep",
+    "brazil",
+    "kyc"
+  ],
+  "author": "Renato Cazzoletti",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatoctti/brasilapi-mcp.git"
+  },
+  "homepage": "https://github.com/renatoctti/brasilapi-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
