@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.renatoctti/brasilapi-mcp",
+  "title": "BrasilAPI (CNPJ, CEP, validation, holidays)",
+  "description": "Brazilian public data via BrasilAPI: CNPJ and partners, CEP, CNPJ/CPF validation, holidays",
+  "repository": {
+    "url": "https://github.com/renatoctti/brasilapi-mcp",
+    "source": "github"
+  },
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@renatoctti/brasilapi-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
